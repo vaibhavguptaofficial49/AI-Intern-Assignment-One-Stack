@@ -1,0 +1,12 @@
+# Decisions and ambiguities
+
+- **Authority order:** The master policy is the baseline, and the circular takes precedence only for clauses it expressly amends. Unamended clauses remain in force. The March 2026 FAQ is informational and does not override either policy document.
+- **Effective dates:** Circular changes apply from 1 August 2026 except deletion of Clause 3.3, which applies from 1 September 2026. Dates before those effective dates use the unchanged master text.
+- **Settlement add-on:** From 1 August, T+0 applies only when the merchant has the active Instant Settlement add-on; otherwise settlement is T+1. Since Q1 does not tell us add-on status, the answer states both outcomes instead of presuming one.
+- **MDR tier and cap:** The 0.25% rate applies only up to ₹10 lakh monthly volume. Large merchants retain the master-policy 0.50% rate. From 1 August, the amended cap is ₹15 for monthly volume up to ₹10 lakh and ₹25 above it. The cap applies to MDR, and GST is calculated on the capped MDR because Clause 2.4 says GST is not part of the cap.
+- **Currency arithmetic:** Fee calculations use decimal arithmetic, apply the cap before GST, and round the GST to two paise-decimal places using half-up rounding.
+- **Refund wording:** Before 1 September 2026, the exception is strictly “within 24 hours”; “same calendar day” is not necessarily equivalent. From 1 September, Clause 3.3 is deleted and the no-return rule in 3.2 applies without exception, even though the FAQ says otherwise.
+- **FAQ citations:** The FAQ contains no numbered clauses. Its citation uses the exact question/entry title as an identifier instead of inventing a clause number.
+- **Per-transaction versus daily limits:** The system reports both independently: the enhanced category limit can be ₹2 lakh per transaction with enhanced KYC, while daily customer-account limit is capped at the lesser of ₹1 lakh and the customer's bank limit. This means the daily limit may constrain practical use of the higher per-transaction allowance.
+- **Account closure timing:** The rule is a maximum of 10 working days from closure, net of outstanding dues. The documents do not provide bank holidays or an exact closure date consistently, so the assistant does not calculate a calendar due date.
+- **Unsupported questions:** The assistant abstains with `CANNOT_ANSWER` when it cannot determine a required fee tier/amount or find support in these three sources. It is a small deterministic prototype, not an open-domain language model.
