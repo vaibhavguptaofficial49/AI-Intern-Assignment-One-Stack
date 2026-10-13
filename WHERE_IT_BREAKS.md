@@ -1,0 +1,5 @@
+# Where this assistant breaks
+
+1. **Calendar-day refund questions without an elapsed time.** The policy exception is measured in hours, while the FAQ says “same day.” The assistant abstains rather than infer that a same-day refund occurred within 24 hours. It also cannot determine facts about whether a refund was actually initiated or what a payment processor recorded.
+2. **Exact settlement or closure dates.** The documents refer to working days and bank holidays but provide no holiday calendar, processing cutoffs beyond the add-on, or transaction/closure timestamps. The system can state the policy window but should not be trusted to calculate an exact date.
+3. **Interactions between enhanced transaction limits and customer daily limits.** The policy permits up to ₹2,00,000 per transaction for eligible categories after enhanced KYC, but the separate customer daily limit is at most ₹1,00,000. This implementation reports both clauses, but does not resolve the operational interpretation of that apparent mismatch or account for bank-specific limits and other UPI activity.
