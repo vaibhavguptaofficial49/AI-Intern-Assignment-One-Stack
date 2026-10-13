@@ -1,0 +1,140 @@
+[
+  {
+    "question": "When does a small merchant receive UPI money?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "UPI settlement is T+0 (same day, by 11:59 PM) for merchants with an active Instant Settlement add-on, and T+1 (next working day) for all others. The question does not specify whether the add-on is active.",
+    "expected_citations": [
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "A (amends 1.1)"}
+    ]
+  },
+  {
+    "question": "A large merchant (above Rs.10 lakh monthly) receives a Rs.4,000 UPI payment. What MDR and GST do they pay?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "The MDR is 0.50% of ₹4,000.00 (₹20.00 before the cap), so the MDR charged is ₹20.00. The applicable MDR cap is ₹25, and it does not reduce this MDR. The ₹25 cap applies to merchants with monthly volume above ₹10 lakh. GST at 18% on the MDR is ₹3.60; the total deduction is ₹23.60.",
+    "expected_citations": [
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "2.2"},
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "C (amends 2.3)"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "2.4"}
+    ]
+  },
+  {
+    "question": "The same large merchant above Rs.10 lakh monthly volume receives a Rs.1,50,000 payment. What do they pay?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "The MDR is 0.50% of ₹150,000.00 (₹750.00 before the cap), so the MDR charged is ₹25.00. The applicable MDR cap is ₹25. The ₹25 cap applies to merchants with monthly volume above ₹10 lakh. GST at 18% on the MDR is ₹4.50; the total deduction is ₹29.50.",
+    "expected_citations": [
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "2.2"},
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "C (amends 2.3)"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "2.4"}
+    ]
+  },
+  {
+    "question": "A merchant refunds a customer 3 hours after the sale. Do they get the MDR back?",
+    "as_of_date": "2026-08-20",
+    "expected_answer": "Yes. Before 1 September 2026, a refund initiated within 24 hours reverses the MDR in full; a refund 3 hours after the sale qualifies.",
+    "expected_citations": [
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "3.2"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "3.3"}
+    ]
+  },
+  {
+    "question": "A merchant refunds a customer 3 hours after the sale. Do they get the MDR back?",
+    "as_of_date": "2026-09-05",
+    "expected_answer": "No. From 1 September 2026, Clause 3.3 is deleted and Clause 3.2 applies without exception: MDR charged on a refunded transaction is not returned. The FAQ's same-day reversal claim is stale.",
+    "expected_citations": [
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "D (deletes 3.3; effective 1 September 2026)"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "3.2"},
+      {"document": "ai-2-data/merchant_faq_2026-03.md", "clause": "entry: If a customer asks for a refund the same day, do I get my fee back?"}
+    ]
+  },
+  {
+    "question": "What does the FAQ say about the MDR cap, and is the FAQ right?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "The March 2026 FAQ says there is no upper limit on the fee. The FAQ is stale and incorrect: since 1 August 2026, the circular caps MDR at ₹15 for merchants up to ₹10 lakh monthly volume and ₹25 for those above ₹10 lakh.",
+    "expected_citations": [
+      {"document": "ai-2-data/merchant_faq_2026-03.md", "clause": "entry: What do I pay on a UPI transaction?"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "2.3"},
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "C (amends 2.3)"}
+    ]
+  },
+  {
+    "question": "Can a customer pay Rs.1,00,000 twice in one day to a merchant?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "No. The daily limit is ₹1,00,000 per customer account or the customer's own bank limit, whichever is lower, across all UPI transactions. Two ₹1,00,000 payments in one day would exceed it.",
+    "expected_citations": [
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "E (amends 4.3)"}
+    ]
+  },
+  {
+    "question": "Does the policy allow me to settle card payments same day?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "No. Card transactions settle T+2 (two working days); bank holidays can move settlement to the next working day.",
+    "expected_citations": [
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "1.2"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "1.3"}
+    ]
+  },
+  {
+    "question": "What does the stale March FAQ claim about a refund within 24 hours, and does that claim still apply?",
+    "as_of_date": "2026-09-05",
+    "expected_answer": "No. From 1 September 2026, Clause 3.3 is deleted and Clause 3.2 applies without exception: MDR charged on a refunded transaction is not returned. The FAQ's same-day reversal claim is stale.",
+    "expected_citations": [
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "D (deletes 3.3; effective 1 September 2026)"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "3.2"},
+      {"document": "ai-2-data/merchant_faq_2026-03.md", "clause": "entry: If a customer asks for a refund the same day, do I get my fee back?"}
+    ]
+  },
+  {
+    "question": "How much is the MDR on a Rs.4,000 UPI transaction?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "I cannot calculate the MDR without both the transaction amount and whether the merchant's monthly UPI volume is up to or above ₹10 lakh.",
+    "expected_citations": []
+  },
+  {
+    "question": "A capital-markets merchant has completed enhanced KYC. Can one customer make a Rs.1,50,000 payment and then another Rs.1,00,000 payment within the daily limit?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "The standard UPI per-transaction limit is ₹1,00,000. Capital Markets and Insurance merchants may accept up to ₹2,00,000 per transaction only after enhanced KYC; separately, the customer's total daily UPI limit is the lower of ₹1,00,000 and their bank's limit.",
+    "expected_citations": [
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "4.1"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "4.2"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "4.4"},
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "E (amends 4.3)"}
+    ]
+  },
+  {
+    "question": "I closed my account yesterday. When will I get my money?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "Pending settlements are released within 10 working days of account closure, after deducting outstanding dues. The policy does not provide enough information to calculate the exact release date without the closure date and applicable bank holidays.",
+    "expected_citations": [
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "5.2"}
+    ]
+  },
+  {
+    "question": "When do I receive UPI settlement if I do not have the Instant Settlement add-on?",
+    "as_of_date": "2026-07-31",
+    "expected_answer": "UPI settlement is T+1 (the next working day). Sundays and bank holidays are excluded, and a settlement date falling on a bank holiday moves to the next working day.",
+    "expected_citations": [
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "1.1"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "1.3"}
+    ]
+  },
+  {
+    "question": "What is the MDR and GST on a Rs.10,000 payment for a small merchant with monthly UPI volume below Rs.10 lakh?",
+    "as_of_date": "2026-08-15",
+    "expected_answer": "The MDR is 0.25% of ₹10,000.00 (₹25.00 before the cap), so the MDR charged is ₹15.00. The applicable MDR cap is ₹15. The ₹15 cap applies to merchants with monthly volume up to ₹10 lakh. GST at 18% on the MDR is ₹2.70; the total deduction is ₹17.70.",
+    "expected_citations": [
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "B (amends 2.1)"},
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "C (amends 2.3)"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "2.4"}
+    ]
+  },
+  {
+    "question": "If my customer asks for a refund on the same calendar day, is the fee always reversed?",
+    "as_of_date": "2026-08-20",
+    "expected_answer": "I cannot determine eligibility from 'same day' alone: the policy exception is specifically within 24 hours of the transaction. Before 1 September 2026, a refund within 24 hours reverses MDR; from that date, no exception applies.",
+    "expected_citations": [
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "3.2"},
+      {"document": "ai-2-data/policy_master_v1.md", "clause": "3.3"},
+      {"document": "ai-2-data/circular_2026_08_amendment.md", "clause": "D (deletes 3.3; effective 1 September 2026)"}
+    ]
+  }
+]
